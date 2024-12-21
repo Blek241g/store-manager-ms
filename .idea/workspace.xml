@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="32eac34a-c7a0-490b-b807-5671bc7ecf59" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/src/main/java/org/scalke/configservice/ConfigServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/src/test/java/org/scalke/configservice/ConfigServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/src/main/java/org/scalke/discoveryservice/DiscoveryServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/src/test/java/org/scalke/discoveryservice/DiscoveryServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/org/scalke/gatewayservice/GatewayServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/org/scalke/gatewayservice/config/JobRoutingConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/app.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/test/java/org/scalke/gatewayservice/GatewayServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/ProductsServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/config/db/ProductSeeder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/config/global/GlobalConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/config/global/ProductServiceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/constants/AppMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/constants/ProductState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/dtos/ProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/entities/Merchant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/entities/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/exceptions/ProductNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/exceptions/ProductServiceLogicException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/mappers/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/mappers/SubCategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/repositories/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/services/AddressServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/services/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/services/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/web/advices/ProductServiceExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/web/clients/OwnerRestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/web/controllers/ConfigTestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/web/controllers/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/web/controllers/ProductControllerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/java/org/scalke/productsservice/web/requests/AddProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products-service/src/test/java/org/scalke/productsservice/ProductsServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales-service/src/main/java/org/scalke/salesservice/SalesServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales-service/src/main/java/org/scalke/salesservice/dtos/AddressDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales-service/src/main/java/org/scalke/salesservice/entities/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales-service/src/main/java/org/scalke/salesservice/mappers/AddressMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales-service/src/main/java/org/scalke/salesservice/repositories/AddressRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales-service/src/main/java/org/scalke/salesservice/services/AddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales-service/src/main/java/org/scalke/salesservice/services/AddressServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales-service/src/main/java/org/scalke/salesservice/web/controllers/AddressController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales-service/src/main/java/org/scalke/salesservice/web/request/AddAddressRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales-service/src/test/java/org/scalke/salesservice/SalesServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scalke/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scalke/constants/AppMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scalke/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/src/main/java/org/scalke/storeservice/StoreServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/src/main/java/org/scalke/storeservice/config/db/MerchantSeeder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/src/main/java/org/scalke/storeservice/constants/AppMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/src/main/java/org/scalke/storeservice/dtos/MerchantDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/src/main/java/org/scalke/storeservice/entities/Agent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/src/main/java/org/scalke/storeservice/entities/Merchant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/src/main/java/org/scalke/storeservice/entities/Store.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/src/main/java/org/scalke/storeservice/exceptions/MerchantNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/src/main/java/org/scalke/storeservice/exceptions/MerchnatServiceLogicException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/src/main/java/org/scalke/storeservice/mappers/MerchantMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/src/main/java/org/scalke/storeservice/repositories/MerchantRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/src/main/java/org/scalke/storeservice/services/MerchantService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/src/main/java/org/scalke/storeservice/services/MerchantServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/src/main/java/org/scalke/storeservice/web/advices/MerchantServiceExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/src/main/java/org/scalke/storeservice/web/controllers/MerchantController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/src/main/java/org/scalke/storeservice/web/controllers/MerchantControllerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store-service/src/test/java/org/scalke/storeservice/StoreServiceApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Blek241g"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Blek241g/store-manager-config-repo.git",
+    "accountId": "964bc3e6-e164-4537-9415-2b819ddbe77a"
+  }
+}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-Dspring.profiles.active=native" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2qM3bPqNpXO7uc1oaZ1fowFCM3H" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "HTTP Request.ProductsServiceApplication | #1.executor": "Run",
+    "HTTP Request.ProductsServiceApplication | #2.executor": "Run",
+    "HTTP Request.ProductsServiceApplication | #3.executor": "Run",
+    "HTTP Request.generated-requests | #1.executor": "Run",
+    "HTTP Request.generated-requests | #4.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ConfigServiceApplication.executor": "Run",
+    "Spring Boot.DiscoveryServiceApplication.executor": "Run",
+    "Spring Boot.GatewayServiceApplication.executor": "Run",
+    "Spring Boot.ProductsServiceApplication.executor": "Run",
+    "Spring Boot.StoreServiceApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-22",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "G:/projects/barro/project/store_manager",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.scalke.storeservice.exceptions" />
+      <recent name="org.scalke.storeservice.web.controllers" />
+      <recent name="org.scalke.storeservice.services" />
+      <recent name="org.scalke.productsservice.exceptions" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\my_projects\barro\projet\store_manager\config-repo" />
+      <recent name="G:\my_projects\barro\projet\store_manager\gateway-service\src\main\resources" />
+      <recent name="G:\my_projects\barro\projet\store_manager\src\main\java\org\scalke" />
+      <recent name="G:\my_projects\barro\projet\store_manager\store-service\src\main\java\org\scalke\storeservice" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.scalke.productsservice.config.global" />
+      <recent name="org.scalke.productsservice.entities" />
+      <recent name="org.scalke.storeservice.config.db" />
+      <recent name="org.scalke.storeservice.web.advices" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ConfigServiceApplication">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.scalke.Main" />
+      <module name="store_manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.scalke.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductsServiceApplication | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/ProductsServiceApplication.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductsServiceApplication | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/ProductsServiceApplication.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductsServiceApplication | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/ProductsServiceApplication.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="config-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.scalke.configservice.ConfigServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="discovery-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.scalke.discoveryservice.DiscoveryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.scalke.gatewayservice.GatewayServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="products-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.scalke.productsservice.ProductsServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SalesServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="sales-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.scalke.salesservice.SalesServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StoreServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="store-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.scalke.storeservice.StoreServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="HTTP Request.ProductsServiceApplication | #1" />
+      <item itemvalue="HTTP Request.ProductsServiceApplication | #2" />
+      <item itemvalue="HTTP Request.ProductsServiceApplication | #3" />
+      <item itemvalue="HTTP Request.generated-requests | #1" />
+      <item itemvalue="Spring Boot.StoreServiceApplication" />
+      <item itemvalue="Spring Boot.ConfigServiceApplication" />
+      <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
+      <item itemvalue="Spring Boot.GatewayServiceApplication" />
+      <item itemvalue="Spring Boot.ProductsServiceApplication" />
+      <item itemvalue="Spring Boot.SalesServiceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.ProductsServiceApplication | #2" />
+        <item itemvalue="HTTP Request.ProductsServiceApplication | #3" />
+        <item itemvalue="HTTP Request.ProductsServiceApplication | #1" />
+        <item itemvalue="HTTP Request.generated-requests | #1" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32eac34a-c7a0-490b-b807-5671bc7ecf59" name="Changes" comment="" />
+      <created>1734458689284</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734458689284</updated>
+      <workItem from="1734458691704" duration="2567000" />
+      <workItem from="1734475836946" duration="4976000" />
+      <workItem from="1734545473830" duration="7069000" />
+      <workItem from="1734639412598" duration="487000" />
+      <workItem from="1734646187811" duration="7091000" />
+      <workItem from="1734665339395" duration="1135000" />
+      <workItem from="1734699919461" duration="18149000" />
+      <workItem from="1734784872412" duration="3003000" />
+      <workItem from="1734787945750" duration="2996000" />
+      <workItem from="1734791160188" duration="7817000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

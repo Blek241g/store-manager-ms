@@ -1,0 +1,18 @@
+{
+  "name": "application",
+  "profiles": [
+    "default"
+  ],
+  "label": null,
+  "version": "23d84835853efbc41e0971f90f32c3d581e607a8",
+  "state": "",
+  "propertySources": [
+    {
+      "name": "file:///G:/projects/barro/project/store_manager/config-repo/application.properties",
+      "source": {
+        "global.params.a1": "11",
+        "global.params.a2": "111"
+      }
+    }
+  ]
+}
