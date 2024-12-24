@@ -3,10 +3,8 @@ package org.scalke.productsservice.services;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.NotImplementedException;
-import org.apache.logging.log4j.util.PropertiesUtil;
 import org.scalke.productsservice.constants.AppMessage;
 import org.scalke.productsservice.dtos.ProductDTO;
-import org.scalke.productsservice.entities.Merchant;
 import org.scalke.productsservice.entities.Product;
 import org.scalke.productsservice.exceptions.ProductNotFoundException;
 import org.scalke.productsservice.exceptions.ProductServiceLogicException;
@@ -17,12 +15,10 @@ import org.scalke.productsservice.web.requests.AddProductRequest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
-import java.util.List;
 import java.util.Objects;
 
 @Slf4j

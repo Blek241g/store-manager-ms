@@ -1,6 +1,7 @@
 package org.scalke.storeservice.entities;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import org.scalke.models.User;
@@ -20,6 +21,11 @@ public class Merchant implements Serializable {
     private String username;
     private String lastname;
     private String firstname;
+    @Column(unique = true)
+    @NotNull
+    @Email
     private String email;
+    @Column(unique = true)
+    @NotNull
     private String phoneNumber;
 }

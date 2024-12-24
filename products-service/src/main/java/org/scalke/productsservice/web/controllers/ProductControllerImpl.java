@@ -15,7 +15,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.net.URI;
 import java.util.List;
 
 @AllArgsConstructor
@@ -59,12 +62,10 @@ public class ProductControllerImpl implements ProductController {
     // End Get Methods
 
     @Override
-    public ResponseEntity<String> addNewProduct(Long ownerId, AddProductRequest request) throws ProductServiceLogicException {
+    public ResponseEntity<ProductDTO> addNewProduct(Long ownerId, AddProductRequest request) throws ProductServiceLogicException {
         ProductDTO p =  productService.addNewProduct(request);
-        boolean created = p != null;
-        String message = created ? "Product has successfully added !" : "Added product failed";
-        HttpStatus status = created ? HttpStatus.CREATED : HttpStatus.BAD_REQUEST;
-        return new ResponseEntity<String>(message, status);
+        URI productLocation = MvcUriComponentsBuilder.fromController(getClass()).path("/id/{id}").buildAndExpand(p.getId()).toUri();
+        return ResponseEntity.created(productLocation).body(p);
     }
 
 }

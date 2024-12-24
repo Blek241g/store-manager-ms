@@ -1,3 +1,53 @@
+GET http://localhost:8082/store/merchants/find/1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-12-23T095502.303.json
+
+###
+
+GET http://localhost:8082/store/merchants/find/1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-12-23T095428.404.json
+
+###
+
+GET http://localhost/store/merchants/find/1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-12-23T095416.404.html
+
+###
+
+GET http://localhost:8082/store/merchants/1page=22&size=95&sortBy=UBoLbhC2&ascending=false
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-12-23T095220.400.json
+
+###
+
+GET http://localhost/store/merchants/1page=98&size=79&sortBy=hZnf7ZrL&ascending=false
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-12-23T095135.404.html
+
+###
+
 GET http://localhost:8081/config/global
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
 Accept-Encoding: br, deflate, gzip, x-gzip

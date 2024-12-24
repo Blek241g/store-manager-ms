@@ -1,11 +1,8 @@
 package org.scalke.productsservice.web.clients;
 
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
-import org.scalke.productsservice.entities.Merchant;
 import org.scalke.productsservice.exceptions.ProductServiceLogicException;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 

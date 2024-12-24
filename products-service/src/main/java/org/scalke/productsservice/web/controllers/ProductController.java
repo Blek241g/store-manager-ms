@@ -16,7 +16,7 @@ import java.util.List;
 public interface ProductController {
 
     @PostMapping("/owner/{ownerId}")
-    ResponseEntity<?> addNewProduct(@PathVariable Long ownerId, @Valid @RequestBody AddProductRequest request) throws ProductServiceLogicException;
+    ResponseEntity<ProductDTO> addNewProduct(@PathVariable Long ownerId, @Valid @RequestBody AddProductRequest request) throws ProductServiceLogicException;
 
     //Get Methods
     @GetMapping("/owner/{ownerId}")

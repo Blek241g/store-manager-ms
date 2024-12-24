@@ -19,7 +19,7 @@ public class MerchantSeeder {
         return args -> {
             Faker faker = new Faker();
 
-            for(int i = 1; i<6; i++){
+            for(int i = 1; i<21; i++){
                merchantRepository.save(
                        Merchant.builder()
                                .lastname(faker.name().lastName())

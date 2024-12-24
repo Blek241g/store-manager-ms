@@ -11,7 +11,6 @@ import java.util.List;
 public interface ProductMapper {
 
     Product dtoToEntity(ProductDTO productDTO);
-//    @Mapping(source = "id", target = "id")
     ProductDTO entityToDto(Product product);
     List<ProductDTO> map(List<Product> Product);
 }
