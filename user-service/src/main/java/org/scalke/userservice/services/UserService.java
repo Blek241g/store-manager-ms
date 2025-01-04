@@ -23,6 +23,5 @@ public interface UserService {
     UserDTO updateUser(UpdateUserRequest request) throws UserServiceLogicException;
     void deleteUser(Long id) throws UserServiceLogicException;
     void deleteUser(AppUser appUser) throws UserServiceLogicException;
-
-    UserDTO updateUserFullName(UpdateUserNameRequest request) throws UserServiceLogicException;
+    UserDTO updateUserFullName(UpdateUserNameRequest request) throws UserServiceLogicException, UserNotFoundException;
 }

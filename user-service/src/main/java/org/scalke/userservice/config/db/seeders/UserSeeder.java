@@ -62,9 +62,9 @@ public class UserSeeder implements ApplicationListener<ContextRefreshedEvent> {
 
             List<AppPermission> superAdminPermissions = getSuperAdminPermission();
             List<AppPermission> ownerPermissions = getOwnerPermission();
-            AppRole superAdminRole =  createRoleIfNotExist("super_admin", superAdminPermissions);
-            AppRole ownerRole = createRoleIfNotExist("owner", ownerPermissions);
-            AppRole agentRole = createRoleIfNotExist("agent", null);
+            AppRole superAdminRole =  createRoleIfNotExist("SUPER_ADMIN", superAdminPermissions);
+            AppRole ownerRole = createRoleIfNotExist("OWNER", ownerPermissions);
+            AppRole agentRole = createRoleIfNotExist("REGULAR", null);
 
             AppUser superAdmin = createUserIfNotExist(AppUser.builder()
                     .email("super_admin@example.com")
@@ -109,7 +109,7 @@ public class UserSeeder implements ApplicationListener<ContextRefreshedEvent> {
                     .createdBy(owner.getId())
                     .build());
 
-            permissionRoleService.addPermissionToRole("agent", "show_product");
+            permissionRoleService.addPermissionToRole("REGULAR", "show_product");
             roleUserService.addRoleToUser(superAdmin.getId(), superAdminRole.getId());
             roleUserService.addRoleToUser(agent, agentRole);
 

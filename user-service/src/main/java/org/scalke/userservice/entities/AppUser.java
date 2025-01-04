@@ -1,5 +1,6 @@
 package org.scalke.userservice.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
@@ -7,6 +8,7 @@ import lombok.*;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 import org.scalke.userservice.constants.UserType;
+import org.springframework.hateoas.RepresentationModel;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -17,7 +19,7 @@ import java.util.Objects;
 @Entity
 @Table(name = "users")
 @DynamicUpdate @DynamicInsert
-public class AppUser {
+public class AppUser extends RepresentationModel<AppUser> {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long id;
@@ -26,6 +28,7 @@ public class AppUser {
 
     private String email;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @JsonIgnore
     private String password;
     @Column(unique = true)
     private String username;
@@ -57,7 +60,6 @@ public class AppUser {
 
 
     public Long getCreatedBy(){
-
         return userType == UserType.ADMIN ? getId() : createdBy;
     }
 }

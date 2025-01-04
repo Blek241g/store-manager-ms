@@ -5,9 +5,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.scalke.userservice.constants.UserType;
+import org.springframework.hateoas.RepresentationModel;
 
 @AllArgsConstructor @NoArgsConstructor @Getter @Setter
-public class UserDTO {
+public class UserDTO extends RepresentationModel<UserDTO> {
+//public class UserDTO{
     private Long id;
     private String username;
     private String lastname;

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface OwnerRestClient {
 
     @CircuitBreaker(name = "storeMerchantService", fallbackMethod = "handleCheckIfMerchantExistWithId")
-    @GetMapping("/store/merchants/exist/{id}")
+    @GetMapping("/api/store/merchants/exist/{id}")
     Boolean checkIfMerchantExistWithId(@PathVariable Long id);
 
     default Boolean handleCheckIfMerchantExistWithId(Long id, Exception e) throws ProductServiceLogicException {

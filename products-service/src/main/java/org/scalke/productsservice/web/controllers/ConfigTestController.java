@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/config")
+@RequestMapping("/api//config")
 @RefreshScope
 public class ConfigTestController {
 

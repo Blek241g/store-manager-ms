@@ -1,0 +1,61 @@
+{
+  "content": [
+    {
+      "id": 2,
+      "username": "owner",
+      "lastname": "Guérin",
+      "firstname": "Camille",
+      "phoneNumber": "+33 3 03 94 67 05",
+      "email": "owner@example.com",
+      "userType": "OWNER",
+      "isActive": true,
+      "links": [
+        {
+          "rel": "self",
+          "href": "http://localhost:8080/api/users/id/2"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "username": "owner10",
+      "lastname": "Robin",
+      "firstname": "Clara",
+      "phoneNumber": "0336589162",
+      "email": "lea.nguyen@yahoo.fr",
+      "userType": "OWNER",
+      "isActive": true,
+      "links": [
+        {
+          "rel": "self",
+          "href": "http://localhost:8080/api/users/id/4"
+        }
+      ]
+    }
+  ],
+  "pageable": {
+    "pageNumber": 0,
+    "pageSize": 5,
+    "sort": {
+      "empty": false,
+      "unsorted": false,
+      "sorted": true
+    },
+    "offset": 0,
+    "unpaged": false,
+    "paged": true
+  },
+  "last": true,
+  "totalPages": 1,
+  "totalElements": 2,
+  "size": 5,
+  "number": 0,
+  "sort": {
+    "empty": false,
+    "unsorted": false,
+    "sorted": true
+  },
+  "first": true,
+  "numberOfElements": 2,
+  "empty": false
+}

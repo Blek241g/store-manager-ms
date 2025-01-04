@@ -1,0 +1,15 @@
+version: '1'
+services:
+  mysql:
+    container_name: store-manager-mysql
+    restart: always
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - '3306:3306'
+    volumes:
+      - mysql_db:/var/lib/mysql
+
+volumes:
+  mysql_db:

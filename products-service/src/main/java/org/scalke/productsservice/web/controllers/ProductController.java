@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RequestMapping("/products")
+@RequestMapping("/api/products")
 public interface ProductController {
 
     @PostMapping("/owner/{ownerId}")

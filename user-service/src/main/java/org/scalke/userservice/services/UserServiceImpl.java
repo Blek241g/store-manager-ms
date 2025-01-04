@@ -163,13 +163,16 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserDTO updateUserFullName(UpdateUserNameRequest request) throws UserServiceLogicException {
+    public UserDTO updateUserFullName(UpdateUserNameRequest request) throws UserServiceLogicException, UserNotFoundException {
         try {
            AppUser user = findUserById(request.getUserId());
            user.setFirstname(request.getFirstname());
            user.setLastname(request.getLastname());
            return userMapper.entityToDto( userRepository.save(user));
-        }catch (Exception e) {
+        }catch (UserNotFoundException e){
+            throw e;
+        }
+        catch (Exception e) {
             log.error("Error while updating user full name: {}", e.getMessage());
             throw new UserServiceLogicException(AppMessage.SOME_THING_WENT_WRONG, HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -179,7 +182,7 @@ public class UserServiceImpl implements UserService {
     public AppUser findUserById(Long id) throws UserNotFoundException, UserServiceLogicException {
         try {
             return userRepository.findById(id).orElseThrow(
-                    () -> new UserNotFoundException("User with id: "+id+" not foudn!", HttpStatus.NOT_FOUND));
+                    () -> new UserNotFoundException("User with id: "+id+" not found!", HttpStatus.NOT_FOUND));
         }catch (UserNotFoundException e) {
             throw e;
         }

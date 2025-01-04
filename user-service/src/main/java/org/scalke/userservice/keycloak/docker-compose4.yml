@@ -1,0 +1,42 @@
+version: '3.6'
+
+services:
+  keycloak_web:
+    image: quay.io/keycloak/keycloak:23.0.7
+    container_name: keycloak_web_1
+    environment:
+      KC_DB: postgres
+      KC_DB_URL: jdbc:mysql://mysql:3306/kc_db
+      KC_DB_USERNAME: keycloak
+      KC_DB_PASSWORD: password
+
+      KC_HOSTNAME: localhost
+      KC_HOSTNAME_PORT: 8080
+      KC_HOSTNAME_STRICT: false
+      KC_HOSTNAME_STRICT_HTTPS: false
+
+      KC_LOG_LEVEL: info
+      KC_METRICS_ENABLED: true
+      KC_HEALTH_ENABLED: true
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+    command: start-dev
+    depends_on:
+      - mysql
+    ports:
+      - 8080:8080
+
+  mysql:
+    container_name: store-manager-mysql
+    restart: always
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: kc_db
+    ports:
+      - '3306:3306'
+    volumes:
+      - mysql_db:/var/lib/mysql
+
+volumes:
+  mysql_db:
